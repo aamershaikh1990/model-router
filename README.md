@@ -14,16 +14,20 @@ The status line shows the current pick. A continuation turn keeps the previous t
 
 ## Install
 
-At the prompt of a terminal session:
-
-```text
-/plugin install model-router --marketplace aamershaikh1990/model-router
-```
-
 From a shell:
 
 ```bash
-claude plugin install model-router --marketplace aamershaikh1990/model-router
+claude plugin marketplace add aamershaikh1990/model-router
 ```
 
-Answer `y` to add the marketplace, then pick a scope (user scope runs it in every project).
+```bash
+claude plugin install model-router@model-router --scope user
+```
+
+User scope (the default) runs it in every project. Restart any running session to load it, then run `/route` to check it is active.
+
+## Turn it off
+
+- `/route off` pauses routing (remembered across sessions); `/route auto` turns it back on.
+- `claude plugin disable model-router@model-router` disables it; `claude plugin enable model-router@model-router` re-enables it.
+- `claude plugin uninstall model-router@model-router` removes it.
