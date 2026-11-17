@@ -1,0 +1,1 @@
+{ "name": "model-router", "version": "0.1.0", "description": "Routes each turn to the cheapest fitting model: small jobs to Haiku, normal to Sonnet, big ones to Opus." }

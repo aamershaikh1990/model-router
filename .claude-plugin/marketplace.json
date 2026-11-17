@@ -1,0 +1,5 @@
+{
+  "name": "model-router",
+  "owner": { "name": "aamershaikh1990" },
+  "plugins": [{ "name": "model-router", "source": "./" }]
+}
